@@ -9,14 +9,14 @@ void ejercicio4();
 void ejercicio5();
 void ejercicio6();
 void ejercicio7();
-int numeroRandom();
-int numeroMayor(int numero,int *mayor);
-int numeroMenor(int numero,int *menor);
-int sumaMenores(int limite);
-void tabla(int numero);
-float calculadora(float numero1,float numero2,int operacion);
-int cambioSigno(int *numero);
-void carga(int *numero);
+int numeroRandom();                                             //(1)
+int numeroMayor(int numero,int *mayor);                         //(2)
+int numeroMenor(int numero,int *menor);                         //(3)
+int sumaMenores(int limite);                                    //(4)
+void tabla(int numero);                                         //(5)
+float calculadora(float numero1,float numero2,int operacion);   //(6)
+int cambioSigno(int *numero);                                   //(7)
+void carga(int *numero);                                        //(8)
 int main()
 {
     int ejercicio;
@@ -81,10 +81,10 @@ int main()
     }
     while(ejercicio!=0);
     printf("\nTP3 BIS TERMINADO\n");
-    printf("\nVersion 1.0\n");
+    printf("\nVersion 1.1\n");
     return 0;
 }
-int numeroRandom()                                              //INICIO FUNCION NUMERORANDOM
+int numeroRandom()                                              //INICIO FUNCION NUMERORANDOM       (1)
 {
     int numero;
     time_t t;
@@ -92,7 +92,7 @@ int numeroRandom()                                              //INICIO FUNCION
     numero=rand()%100;
     return(numero);
 }                                                               //FIN FUNCION NUMERORANDOM
-int numeroMayor(int numero,int *mayor)                          //INICIO FUNCION NUMEROMAYOR
+int numeroMayor(int numero,int *mayor)                          //INICIO FUNCION NUMEROMAYOR        (2)
 {
     if(numero>*mayor)
     {
@@ -100,7 +100,7 @@ int numeroMayor(int numero,int *mayor)                          //INICIO FUNCION
     }
     return *mayor;
 }                                                               //FIN FUNCION NUMEROMAYOR
-int numeroMenor(int numero,int *menor)                          //INICIO FUNCION NUMEROMENOR
+int numeroMenor(int numero,int *menor)                          //INICIO FUNCION NUMEROMENOR        (3)
 {
     if(numero<*menor)
     {
@@ -108,7 +108,7 @@ int numeroMenor(int numero,int *menor)                          //INICIO FUNCION
     }
     return *menor;
 }                                                               //FIN FUNCION NUMEROMENOR
-int sumaMenores(int limite)                                     //INICIO FUNCION SUMAMENORES
+int sumaMenores(int limite)                                     //INICIO FUNCION SUMAMENORES        (4)
 {
     int i,suma=0;
     for(i=0;i<limite;i++)
@@ -117,7 +117,7 @@ int sumaMenores(int limite)                                     //INICIO FUNCION
     }
     return suma;
 }                                                               //FIN FUNCION SUMAMENORES
-void tabla(int numero)                                          //INICIO FUNCION TABLA
+void tabla(int numero)                                          //INICIO FUNCION TABLA              (5)
 {
     int i,resultado;
     for(i=1;i<11;i++)
@@ -126,7 +126,7 @@ void tabla(int numero)                                          //INICIO FUNCION
         printf("%i x %i = %i\n",numero,i,resultado);
     }
 }                                                               //FIN FUNCION TABLA
-float calculadora(float numero1,float numero2,int operacion)    //INICIO FUNCION CALCULADORA
+float calculadora(float numero1,float numero2,int operacion)    //INICIO FUNCION CALCULADORA        (6)
 {
     float resultado;
     printf("\n");
@@ -159,17 +159,17 @@ float calculadora(float numero1,float numero2,int operacion)    //INICIO FUNCION
     }
     return resultado;
 }                                                               //FIN FUNCION TABLA
-int cambioSigno(int *numero)                                    //INICIO FUNCION CAMBIOSIGNO
+int cambioSigno(int *numero)                                    //INICIO FUNCION CAMBIOSIGNO        (7)
 {
     *numero=-*numero;
     return *numero;
-}                                                           //FIN FUNCION CAMBIOSIGNO
-void carga(int *numero)                                         //INICIO FUNCION CARGA
+}                                                               //FIN FUNCION CAMBIOSIGNO
+void carga(int *numero)                                         //INICIO FUNCION CARGA              (8)
 {
     printf("Ingrese un valor: ");
     scanf("%i",&*numero);
     printf("\n");
-}                                                           //FIN FUNCION CARGA
+}                                                               //FIN FUNCION CARGA
 void ejercicio1()
 {
     //Desarrollar una funcion que devuelva un valor RANDOM en el rango de 0 a 100.
