@@ -81,7 +81,7 @@ int main()
     }
     while(ejercicio!=0);
     printf("\nTP3 BIS TERMINADO\n");
-    printf("\nVersion 1.2\n");
+    printf("\nVersion 1.5\n");
     return 0;
 }
 int numeroRandom()                                              //INICIO FUNCION NUMERORANDOM       (1)
