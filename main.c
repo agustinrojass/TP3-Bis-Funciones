@@ -35,7 +35,7 @@ int main()
             printf("\nIngrese el ejercicio: ");
             scanf("%i",&ejercicio);
         }
-        while(ejercicio!=1 && ejercicio!=2 && ejercicio!=3 && ejercicio!=4 && ejercicio!=5 && ejercicio!=6 && ejercicio!=7 && ejercicio!=8 && ejercicio!=9 && ejercicio!=10 && ejercicio!=11 && ejercicio!=12 && ejercicio!=13 && ejercicio!=0);
+        while(ejercicio!=1 && ejercicio!=2 && ejercicio!=3 && ejercicio!=4 && ejercicio!=5 && ejercicio!=6 && ejercicio!=7 && ejercicio!=0);
         if(ejercicio!=0)
         {
             printf("\nEJERCICIO %i\n\n",ejercicio);
