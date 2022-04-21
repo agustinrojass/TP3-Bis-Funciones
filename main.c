@@ -81,14 +81,13 @@ int main()
     }
     while(ejercicio!=0);
     printf("\nTP3 BIS TERMINADO\n");
-    printf("\nVersion 1.5\n");
+    printf("\nVersion 1.6\n");
     return 0;
 }
 int numeroRandom()                                              //INICIO FUNCION NUMERORANDOM       (1)
 {
     int numero;
-    time_t t;
-    srand((unsigned) time(&t));                     //INICIALIZA EL GENERADOR DE NUMEROS RANDOM
+    srand(time(NULL));                              //INICIALIZA EL GENERADOR DE NUMEROS RANDOM
     numero=rand()%100;
     return(numero);
 }                                                               //FIN FUNCION NUMERORANDOM
